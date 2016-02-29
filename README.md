@@ -11,6 +11,9 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
 
 ## Exareme Installation
 1. Download zip and unzip or “git clone” from Exareme docker repository
+  ```bash
+  git clone https://github.com/madgik/Docker-Exareme.git
+  ```
 2. Open a terminal (Docker Quickstart Terminal on Windows/Mac or standard terminal on Linux).
 3. Linux only:
 
