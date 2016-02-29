@@ -93,3 +93,22 @@ To gracefully stop your docker container:
 1. Select your Stream Server docker console.
 2. Press Ctrl+C.
 3. Close the console.
+ 
+##Troubleshoot
+* If you are getting an error like:
+  
+  ```bash
+  docker: Error response from daemon: Conflict. The name "/exareme" is already in use by container b13022c72864ad6e7651c1681764ec6ed1554f247e11a1070675b952041fbc78. You have to remove (or rename)
+  ```
+  Run:
+  
+  ```bash
+  docker stop exareme
+  ```
+  or
+  
+  ```bash
+  docker kill exareme
+  ```
+  
+
