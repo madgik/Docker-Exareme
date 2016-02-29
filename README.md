@@ -43,8 +43,8 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
   ```bash
   $ docker run -i -t --rm -p 9090:9090  --name exareme exareme
   ```
-3. Leave this console open!
-3. Find your docker machine IP
+3. Leave this console open while you are working and then [stop the container](#exit-exareme-container).
+4. Find your docker machine IP
   1. On Linux is: localhost
   2. On Windows/Mac open a new Docker Quickstart Terminal and run:
   
@@ -54,7 +54,13 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
     It will return your docker-machine ip **(from now on use this instead of localhost if you are on Windows or Mac)**.
 
 ## Run Stream Queries on Exareme
+To run stream queries on Exareme:
+
+1. Run Stream Server container.
+2. Run Exareme container (and link with Stream Server container).
+
 ### Register a Stream Query
+
 1. Select your favorite REST client. The following screenshots are from [Andvanced REST client](https://chrome.google.com/webstore/detail/hgmloofddffdnphfgcellkdfbfbjeloo) addon from chrome.
 2. Open your REST client.
 3. To query the Stream Server, as shown below, via Exareme you may register the following query:
@@ -83,4 +89,3 @@ To gracefully stop your docker container:
 1. Select your Stream Server docker console.
 2. Press Ctrl+C.
 3. Close the console.
-
