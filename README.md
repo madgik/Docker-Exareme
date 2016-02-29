@@ -66,7 +66,7 @@ To run stream queries on Exareme:
 ### Register a Stream Query
 
 1. Select your favorite REST client. The following screenshots are from [Andvanced REST client](https://chrome.google.com/webstore/detail/hgmloofddffdnphfgcellkdfbfbjeloo) addon from chrome.
-2. Open your REST client.
+2. Open your REST client (ARC in your chrome Apps if you installed Andvanced REST client).
 3. To query the Stream Server, as shown below, via Exareme you may register the following query:
 
   ```sql
