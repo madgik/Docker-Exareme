@@ -37,7 +37,7 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
   $ docker run -i -t --rm -p 9090:9090  --link streamserver --name exareme exareme
   ```
   
-    ![Alt text](/Exareme-Docker/screenshots/run_exareme.png?raw=true "Run Exareme container and link to Stream Server")
+    ![Alt text](/screenshots/run_exareme.png?raw=true "Run Exareme container and link to Stream Server")
 2. To run Exareme only:
 
   ```bash
@@ -66,7 +66,7 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
   via a post request at: http://**docker-machine-ip**:9090/streamqueryregister/stream1 with paramter key: register_query and value the query.
   "stream1" is the name of the query you are registering.
   
-  ![Alt text](/Exareme-Docker/screenshots/register_stream_query.png?raw=true "Register Stream Query")
+  ![Alt text](/screenshots/register_stream_query.png?raw=true "Register Stream Query")
 
 ###Get Query Results
 Get the results of the last 10 seconds by making a GET request at:
@@ -75,7 +75,7 @@ Get the results of the last 10 seconds by making a GET request at:
 http://**docker-machine-ip**:9090/streamqueryresult/stream1?last=10
 ```
 
-![Alt text](/Exareme-Docker/screenshots/get_stream_results.png?raw=true "Register Stream Query")
+![Alt text](/screenshots/get_stream_results.png?raw=true "Register Stream Query")
 
 ## Exit Exareme container
 To gracefully stop your docker container:
