@@ -33,8 +33,8 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
 
 
 ## Run Exareme container
-1. If you are planning to use Exareme with the [Stream Server](/StreamServer-Docker)
-  1. Run the [Stream Server](/StreamServer-Docker) Container
+1. If you are planning to use Exareme with the [Stream Server](https://github.com/madgik/Docker-StreamServer)
+  1. Run the [Stream Server](https://github.com/madgik/Docker-StreamServer) Container
   2. Run Exareme container (and link to streamserver):
   ```bash
   $ docker run -i -t --rm -p 9090:9090  --link streamserver --name exareme exareme
