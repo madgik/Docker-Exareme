@@ -27,6 +27,7 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
   $ cd <path to Docker-Exareme>
   ```
 6. Windows only:
+
   ```bash
   $ dos2unix bootstrap.sh
   ```
