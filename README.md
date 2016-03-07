@@ -10,12 +10,12 @@ Install Docker (on linux) or Docker-toolbox (on Windows/Mac)
 Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
 
 ## Exareme Installation
-1. Download zip and unzip or “git clone” from Exareme docker repository
+1. Open a terminal (Docker Quickstart Terminal on Windows/Mac or standard terminal on Linux).
+2. Download zip and unzip or “git clone” from Exareme docker repository
 
   ```bash
   git clone https://github.com/madgik/Docker-Exareme.git
   ```
-2. Open a terminal (Docker Quickstart Terminal on Windows/Mac or standard terminal on Linux).
 3. Linux only:
 
   ```bash
@@ -24,7 +24,7 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
 4. Navigate to the Exareme Docker Directory:
 
   ```bash
-  $ cd <path to Exareme-Docker>
+  $ cd <path to Docker-Exareme>
   ```
 5. Build Exareme image (this may take a few minutes the first time):
 
