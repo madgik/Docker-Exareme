@@ -26,7 +26,11 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
   ```bash
   $ cd <path to Docker-Exareme>
   ```
-5. Build Exareme image (this may take a few minutes the first time):
+6. Windows only:
+  ```bash
+  $ dos2unix bootstrap.sh
+  ```
+7. Build Exareme image (this may take a few minutes the first time):
 
   ```bash
   $ docker build -t exareme .
