@@ -17,19 +17,23 @@ ENV JAVA_HOME /usr/java/default/
 ENV PATH $PATH:$JAVA_HOME/bin
 
 # python
-RUN sudo apt-get -y install python python-apsw
+RUN sudo apt-get -y install python python-apsw && sudo apt-get -y update
 
 # exareme
-RUN apt-get -y install git maven
-RUN git clone https://github.com/madgik/exareme.git /root/exareme-src
-WORKDIR /root/exareme-src
+RUN apt-get -y install git maven && sudo apt-get -y update
+RUN git clone https://github.com/madgik/exareme.git -b mip /root/exareme-mip
+WORKDIR /root/exareme-mip
+
+RUN sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose && sudo apt-get -y update
+RUN sudo apt-get install -y python-pip && sudo apt-get -y update && sudo pip install -r requirements.txt
+
 RUN mvn clean install -DskipTests
-RUN mv /root/exareme-src/exareme-distribution/target/exareme* /root/exareme
+WORKDIR /root
+RUN ln -s /root/exareme-mip/exareme-distribution/target/exareme /root/exareme
 
-EXPOSE 9090
 WORKDIR /root/exareme
-
-# bootstrap
 ADD bootstrap.sh /root/exareme/bootstrap.sh
-ENTRYPOINT /bin/bash bootstrap.sh
+EXPOSE 9090 1098 1099 8088
+
+ENTRYPOINT /bin/bash -x bootstrap.sh
 

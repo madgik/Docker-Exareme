@@ -5,8 +5,8 @@ echo $(hostname --ip-address) > ./etc/exareme/master
 
 if [[ -e "./var/log/exareme-master.log" ]]; then
 
-    tail -f ./var/log/exareme-master.log
+    tail -f /tmp/exareme/var/log/exareme-master.log
 else
     sleep 2;
-    tail -f ./var/log/exareme-master.log
+    tail -f /tmp/exareme/var/log/exareme-master.log
 fi
