@@ -32,8 +32,8 @@ WORKDIR /root
 RUN ln -s /root/exareme-mip/exareme-distribution/target/exareme /root/exareme
 
 WORKDIR /root/exareme
-ADD bootstrap.sh /root/exareme/bootstrap.sh
-EXPOSE 9090 1098 1099 8088
+ADD ./conf /root/exareme/conf
 
-ENTRYPOINT /bin/bash -x bootstrap.sh
+EXPOSE 9090 1098 1099 8088
+ENTRYPOINT /bin/bash -x ./conf/bootstrap.sh
 
