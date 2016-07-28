@@ -21,7 +21,7 @@ RUN sudo apt-get -y install python python-apsw
 
 # exareme
 RUN apt-get -y install git maven
-RUN git clone https://github.com/madgik/exareme.git /root/exareme-src
+RUN git clone https://github.com/dbilid/exareme.git /root/exareme-src
 WORKDIR /root/exareme-src
 RUN mvn clean install -DskipTests
 RUN mv /root/exareme-src/exareme-distribution/target/exareme* /root/exareme
