@@ -14,7 +14,7 @@ Linux only: [Use docker without sudo](http://askubuntu.com/a/477554)
 2. Download zip and unzip or “git clone” from Exareme docker repository
 
   ```bash
-  git clone https://github.com/madgik/Docker-Exareme.git
+  git clone https://github.com/vnikolopoulos/Docker-Exareme.git
   ```
 3. Linux only:
 
