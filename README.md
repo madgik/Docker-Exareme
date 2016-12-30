@@ -1,7 +1,7 @@
 ## Load the stable prebuilt container
 1. Execute:
 ```bash
-$ docker load < exaremeSTABLE.tar
+$ docker load < postgresserverSTABLE.tar
 ```
 2. Follow the instrunctions of the dev branch to run the container
 
